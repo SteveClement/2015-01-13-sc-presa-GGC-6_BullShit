@@ -1,0 +1,32 @@
+\documentclass[a4paper]{beamer}
+\usepackage{fontspec}
+%\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\setsansfont{Calibri}
+\setmonofont{Consolas}
+
+\usepackage{minted}
+\usetheme{default}
+
+\begin{document}
+
+\definecolor{bg}{rgb}{0.95,0.95,0.95}
+
+\begin{frame}
+
+
+The next code will be directly imported from a file:
+
+
+\inputminted[firstline=2, lastline=12, gobble=0, linenos, mathescape, bgcolor=bg, numbersep=8pt, frame=lines, framesep=3mm, fontsize=\scriptsize]{python}{/Users/steve/GoogleDrive/py-club/bullshit_generator.py}
+\end{frame}
+
+\begin{frame}
+
+Further on:
+
+\inputminted[firstline=14, lastline=27]{python}{/Users/steve/GoogleDrive/py-club/bullshit_generator.py}
+
+\end{frame}
+
+\end{document}
